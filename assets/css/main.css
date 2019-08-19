@@ -243,11 +243,13 @@ textarea {
 
   }
 
+  .product-banner {
+    margin: 1rem 0;
+  }
+
 
   .products {
-    height: auto;
-    padding: 1rem 0;
-
+    height: auto!important;
   }
 }
 
