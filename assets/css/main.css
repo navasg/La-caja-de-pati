@@ -1,0 +1,258 @@
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap");
+
+
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", serif;
+}
+
+p, li, span {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+.template-btn {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  background-color: #cd416c;
+  transition: all ease-in-out .4s;
+}
+
+.template-btn:hover {
+  color: #fff;
+  background-color: #c2335f;
+  transform: translateY(-3px);
+  transition: all ease-in-out .4s;
+}
+
+
+.wrapper {
+  padding: 0 10%;
+}
+.product-banner {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 5px;
+  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.product-banner .product-banner-figure {
+  transform: none;
+  left: 0;
+  clip-path: polygon(calc(100% - 120px) 0, 100% 50%, calc(100% - 120px) 100%, 0 100%, 0 0);
+  width: 129%;
+  position: absolute;
+  background-color: #fff;
+  height: calc(100% + 1px);
+  display: flex;
+  z-index: 1;
+  padding-left: 50px;
+  align-items: center;
+  transition: all ease-in-out .3s;
+}
+
+.container-form {
+  width: 45%;
+  position: relative;
+}
+
+.product-banner {
+  display: flex;
+}
+
+.container-video {
+  width: 55%;
+  overflow: hidden;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .product-banner .product-banner-figure {
+    clip-path: unset;
+    width: 100%;
+    position: absolute;
+    padding-left: 0;
+    padding: 20px 30px;
+  }
+}
+
+.product-banner .product-banner-content {
+  width: 75%;
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .product-banner .product-banner-content {
+    width: 100%;
+  }
+}
+
+.product-banner .product-banner-content h2, .product-entry h2 {
+  font-weight: 700;
+  position: relative;
+  color: #cd416c;
+  font-size: 40px;
+}
+
+.product-banner .product-banner-content h3 {
+  color: #cd416c;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.product-banner .product-banner-content h2, .product-banner .product-banner-content p {
+  margin-bottom: 30px;
+}
+
+.product-banner .product-banner-content p {
+  color: #838383;
+}
+
+span.after {
+  background: #bf9465;
+  top: calc(100% - (-2px));
+  height: 5px;
+  content: '';
+  position: absolute;
+  width: 30%;
+  left: 0;
+}
+
+.title-lines-main {
+  margin-bottom: 100px;
+}
+
+.title-lines-main h3 {
+  padding: 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.form-group {
+  position: relative;
+  font-family: "Montserrat", serif;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #cd416c;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+@media (min-width: 0px) and (max-width: 997px) {
+
+ 
+  .product-banner {
+    background-image: none !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .video-responsive {
+    height: 15rem;
+  }
+
+  .product-entry h2 {
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 2rem;
+  }
+
+  .container-form, .container-video {
+    width: 100%;
+  }
+
+  /* .container-form {
+    position: initial;
+  } */
+
+  .container-video {
+    height: 14rem;
+  }
+
+  .product-banner .product-banner-content h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  span.after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .product-banner-figure, .product-banner {
+    height: auto!important;
+    position: initial!important;
+    clip-path: none!important;
+    width: 100%!important;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-form::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: -99px;
+    height: 200px;
+    width: 100%;
+    clip-path: polygon(50% 33%, 0 50%, 100% 50%);
+    left: 0;
+    /* bottom: 0; */
+    top: -100px;
+    z-index: 1;
+  }
+
+  .product-banner .product-banner-content {
+    width: 100%!important;
+  }
+
+  .product-banner-figure {
+    padding:20px!important;
+
+  }
+
+
+  .products {
+    height: auto;
+    padding: 1rem 0;
+
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  .container-video {
+    height: 20rem;
+  }
+}
